@@ -20,10 +20,8 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async ({view}) => {
-  const data = {
-    title: 'Kadai',
-    message: '',
-  }
-  return view.render('welcome', data)
-})
+Route.get('/','AuthController.index')
+
+Route.get('/student', 'StudentController.index')
+
+
