@@ -23,7 +23,7 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async ({view}) => {
   const data = {
     title: 'Kadai',
-    message: 'これはサンプル',
+    message: '',
   }
   return view.render('welcome', data)
 })
